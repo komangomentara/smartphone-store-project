@@ -1,0 +1,11 @@
+export const products = [
+  { id: 1, name: "iPhone 15", brand: "Apple", category: "Apple", price: 11999000, stock: 8, rating: 4.9, memory: "128 GB", color: "Black", img: "https://images.unsplash.com/photo-1695048133142-1a20484d2569?auto=format&fit=crop&w=900&q=85", description: "Smartphone dengan desain premium, kamera tajam, dan performa cepat untuk aktivitas sehari-hari." },
+  { id: 2, name: "Samsung Galaxy S24", brand: "Samsung", category: "Samsung", price: 10999000, stock: 6, rating: 4.8, memory: "256 GB", color: "Graphite", img: "https://images.unsplash.com/photo-1610945265064-0e34e5519bbf?auto=format&fit=crop&w=900&q=85", description: "Smartphone serbaguna dengan layar jernih, kamera berkualitas, dan pengalaman penggunaan yang nyaman." },
+  { id: 3, name: "Xiaomi Redmi Note 13", brand: "Xiaomi", category: "Xiaomi", price: 2799000, stock: 14, rating: 4.7, memory: "256 GB", color: "Midnight Black", img: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85", description: "Pilihan smartphone terjangkau untuk kebutuhan komunikasi, hiburan, dan produktivitas." },
+  { id: 4, name: "OPPO Reno 11", brand: "OPPO", category: "OPPO", price: 4999000, stock: 10, rating: 4.6, memory: "256 GB", color: "Green", img: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85", description: "Smartphone bergaya modern yang cocok untuk menikmati konten dan mengambil foto." },
+  { id: 5, name: "Google Pixel 8", brand: "Google", category: "Google", price: 8999000, stock: 5, rating: 4.8, memory: "128 GB", color: "Obsidian", img: "https://images.unsplash.com/photo-1592899677977-9c10ca588bbd?auto=format&fit=crop&w=900&q=85", description: "Smartphone dengan pengalaman Android yang sederhana dan fitur fotografi pintar." },
+  { id: 6, name: "Samsung Galaxy A55", brand: "Samsung", category: "Samsung", price: 5299000, stock: 12, rating: 4.7, memory: "256 GB", color: "Navy", img: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?auto=format&fit=crop&w=900&q=85", description: "Perangkat seimbang untuk belajar, bekerja, bermain, dan kebutuhan sehari-hari." }
+];
+
+export const formatRupiah = (value) =>
+  new Intl.NumberFormat("id-ID", { style: "currency", currency: "IDR", maximumFractionDigits: 0 }).format(value);
